@@ -24,7 +24,7 @@ module.exports = function (app) {
 
     res.json({
       initNum,
-      initUnit,
+      initUnit: initUnit === 'l' ? 'L' : initUnit,
       returnNum,
       returnUnit,
       string: resultString
